@@ -8,11 +8,14 @@
     <title>Panda ecommerce</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!-- custom css
+         -->
+         <link rel="stylesheet" href="Css/style.css">
 </head>
 
 <body>
     <header class="container">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg fixed-top  bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">  <img src="images/logo.png" alt="" ></a>
               
@@ -21,31 +24,26 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#shohes">Shoes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#bags">Back pack</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Subscrib</a>
+                      </li>
+
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+               
+                
+                 
+                
+                
               </div>
             </div>
           </nav>
@@ -56,7 +54,7 @@
          
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active bg-info p-5">
+              <div class="carousel-item active panda-bg-info p-5">
                 <div class="row">
                     <div class="col-lg-7 d-flex align-items-center ">
                         <div>
@@ -64,7 +62,7 @@
                             <p>The best headphone in the world for people who just want to waste time in front of
                                 funky world.</p>
                             <h1>420$</h1>
-                            <div class="btn btn-warning">
+                            <div class="btn panda-btn-buy-now">
                                 Buy Now
                             </div>
                           </div>
@@ -74,7 +72,7 @@
                     </div>
                    </div>
               </div>
-              <div class="carousel-item bg-danger p-5">
+              <div class="carousel-item panda-bg-info p-5">
                 <div class="row">
                     <div class="col-lg-7 d-flex align-items-center ">
                         <div>
@@ -82,7 +80,7 @@
                             <p>The best Tv in the world for people who just want to waste time in front of
                                 funky world.</p>
                             <h1>1120$</h1>
-                            <div class="btn btn-warning">
+                            <div class="btn bg-warning">
                                 Buy Now
                             </div>
                           </div>
@@ -92,7 +90,7 @@
                     </div>
                    </div>
               </div>
-              <div class="carousel-item bg-info p-5">
+              <div class="carousel-item panda-bg-info p-5">
                 <div class="row">
                     <div class="col-lg-7 d-flex align-items-center ">
                         <div>
@@ -100,7 +98,7 @@
                             <p>The best x-box in the world for people who just want to waste time in front of
                                 funky world.</p>
                             <h1>222$</h1>
-                            <div class="btn btn-warning">
+                            <div class="btn panda-btn-buy-now">
                                 Buy Now
                             </div>
                           </div>
@@ -129,7 +127,7 @@
         <!-- catagories start -->
         <section>
             <div class="container text-center my-5">
-                <div class="row g-2">
+                <div class="row g-4 catagories">
                   <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="p-3 border bg-warning d-flex align-items-center justify-content-around  rounded-3">
                        <h1 class="text-white">Watch</h1>
@@ -156,7 +154,7 @@
         <!-- catagories end -->
 
         <!-- shoes section start -->
-            <section class="container my-5">
+            <section class="container my-5 " id="shohes">
                 <h1>Shoes</h1>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     <div class="col">
@@ -168,7 +166,7 @@
                           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                         <div class="m-3">
-                         <div class="btn btn-warning">Buy now</div>
+                         <div class="btn panda-btn-buy-now">Buy now</div>
                         </div>
                       </div>
                     </div>
@@ -181,7 +179,7 @@
                           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                         <div class="m-3">
-                         <div class="btn btn-warning">Buy now</div>
+                         <div class="btn panda-btn-buy-now">Buy now</div>
                         </div>
                       </div>
                     </div>
@@ -194,7 +192,7 @@
                           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                         <div class="m-3">
-                         <div class="btn btn-warning">Buy now</div>
+                         <div class="btn panda-btn-buy-now">Buy now</div>
                         </div>
                       </div>
                     </div>
@@ -204,7 +202,7 @@
         <!-- shoes section  end -->
 
         <!-- backpack section start -->
-        <section class="container my-5">
+        <section class="container my-5" id="bags">
             <h1>Bagckpac</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -216,7 +214,7 @@
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="m-3">
-                     <div class="btn btn-warning">Buy now</div>
+                     <div class="btn panda-btn-buy-now">Buy now</div>
                     </div>
                   </div>
                 </div>
@@ -229,7 +227,7 @@
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="m-3">
-                     <div class="btn btn-warning">Buy now</div>
+                     <div class="btn panda-btn-buy-now">Buy now</div>
                     </div>
                   </div>
                 </div>
@@ -242,7 +240,7 @@
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="m-3">
-                     <div class="btn btn-warning">Buy now</div>
+                     <div class="btn panda-btn-buy-now">Buy now</div>
                     </div>
                   </div>
                 </div>
@@ -251,7 +249,7 @@
         </section>
         
         <!-- subscribe start -->
-        <section style="height:300px ;" class="container d-flex rounded-3 align-items-center justify-content-center bg-info">
+        <section style="height:300px ;" class="container d-flex rounded-3 align-items-center justify-content-center panda-bg-info">
             <div>
                 <h2>LET'S STAY IN TOUCH</h2>
             <p>Get updates on sales, specials and more</p>
@@ -263,7 +261,7 @@
                 </div>
               
                 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn panda-btn-buy-now">Submit</button>
               </form>
             </div>
            
